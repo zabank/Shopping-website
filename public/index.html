@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>跨境电商示例</title>
+  <script>
+    async function loadProducts() {
+      const res = await fetch('/api/products');
+      const products = await res.json();
+      const container = document.getElementById('products');
+      products.forEach(p => {
+        const item = document.createElement('div');
+          item.innerHTML = `<h3>${p.name}</h3><p>${p.description}</p><strong>$${p.price}</strong>`;
+        container.appendChild(item);
+      });
+    }
+    document.addEventListener('DOMContentLoaded', loadProducts);
+  </script>
+</head>
+<body>
+  <h1>中国商品</h1>
+  <div id="products"></div>
+</body>
+</html>
