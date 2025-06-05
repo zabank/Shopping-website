@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "中国茶具",
+    "price": 29.99,
+    "description": "景德镇瓷器茶具"
+  },
+  {
+    "id": 2,
+    "name": "丝巾",
+    "price": 19.99,
+    "description": "苏州高品质丝绸丝巾"
+  },
+  {
+    "id": 3,
+    "name": "竹筷子",
+    "price": 5.99,
+    "description": "传统竹制筷子"
+  }
+]
